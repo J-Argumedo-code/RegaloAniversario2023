@@ -1,0 +1,371 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Recuerdos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/components.css">
+    <link rel="stylesheet" href="../css/recuerdos.css">
+</head>
+
+<body>
+    <div class="pre-load position-fixed w-100 h-100 d-flex justify-content-center align-items-center" id="preLoad">
+        <svg xmlns="http://www.w3.org/2000/svg" width="40" viewBox="0 0 16 16" class="m-4">
+            <path
+                d="M4 1c2.21 0 4 1.755 4 3.92C8 2.755 9.79 1 12 1s4 1.755 4 3.92c0 3.263-3.234 4.414-7.608 9.608a.513.513 0 0 1-.784 0C3.234 9.334 0 8.183 0 4.92 0 2.755 1.79 1 4 1z" />
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="40" viewBox="0 0 16 16" class="m-4">
+            <path
+                d="M4 1c2.21 0 4 1.755 4 3.92C8 2.755 9.79 1 12 1s4 1.755 4 3.92c0 3.263-3.234 4.414-7.608 9.608a.513.513 0 0 1-.784 0C3.234 9.334 0 8.183 0 4.92 0 2.755 1.79 1 4 1z" />
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="40" viewBox="0 0 16 16" class="m-4">
+            <path
+                d="M4 1c2.21 0 4 1.755 4 3.92C8 2.755 9.79 1 12 1s4 1.755 4 3.92c0 3.263-3.234 4.414-7.608 9.608a.513.513 0 0 1-.784 0C3.234 9.334 0 8.183 0 4.92 0 2.755 1.79 1 4 1z" />
+        </svg>
+    </div>
+
+    <!--Sidebar-->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="sidebar">
+        <div class="offcanvas-header">
+            <h1 class="offcanvas-title">Menú</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="navbar-nav m-auto">
+                <li class="nav-item">
+                    <a class="nav-link sidebar-link" href="../index.html">❣ Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active sidebar-link" href="recuerdos.html">❣ Recuerdos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link sidebar-link" href="galeria.html">❣ Galeria</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link sidebar-link" href="canciones.html">❣ Canciones</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link sidebar-link" href="promesas.html">❣ Promesas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link sidebar-link" href="porque.html">❣ ¿Por qué?</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container-fluid flex-nowrap">
+            <a class="navbar-brand text-center m-0 w-100" href="../index.html">
+                <img src="../resources/logo.svg" alt="" height="100px" class="mx-auto">
+            </a>
+            <button class="navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#sidebar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav m-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Recuerdos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Galeria</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Canciones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Promesas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">¿Por qué?</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main class="container-fluid">
+        <div class="row position-relative">
+            <img src="../resources/recuerdos.jpg" alt="" class="p-0">
+            <div class="col-12 position-absolute z-3 mt-5 pt-5">
+                <h1>Nuestros recuerdos</h1>
+            </div>
+        </div>
+
+        <div class="row my-5 px-4">
+            <p class="p-0 mb-4">Bueno...tengo muchos recuerdos de nosotros juntos...pero no tengo foto de todos, hagamos
+                una cronología y
+                pongo la foto de los que tenga ok? <br> "De los mejores momentos no hay fotos, no hubo tiempo de
+                tomarlas."</p>
+
+            <!--Conocernos-->
+            <div class="col-12">
+                <div class="circle"> </div>
+                <hr>
+            </div>
+            <div class="col-12 p-0">
+                <h2>Conocernos</h2>
+                <h3>Nov. 2017</h3>
+                <p>Recuerdo como fue la primera vez que te vi y hablamos...noviembre de 2017...cursos de verano del
+                    ricaldone, yo iba a robótica, tu a natación, llegaba temprano, y un día vi como había una chica de
+                    pelo colocho en las mesas de cemento leyendo...me preguntaba, ¿qué es lo más que puede pasar si le
+                    hablo? y para no pasar solo tanto tiempo bajé a hablarte...en eso vi como leías el primer libro de
+                    la saga de Percy Jackson...me llamaste más la atención, cuando llegué pensé "wow, es muy linda"...y
+                    así es como sin saber empecé a escribir este libro llamado "El primer y último amor de mi vida"</p>
+            </div>
+
+            <!--Primer foto y beso-->
+            <div class="col-12">
+                <hr>
+                <div class="circle"> </div>
+                <hr>
+            </div>
+            <div class="col-12 p-0">
+                <h2>Primer foto y beso</h2>
+                <h3>2 Mar. 2018</h3>
+                <img src="../resources/1.jpg" alt="" width="100%">
+                <p>Curiosamente, esta primer foto juntos, es del mismo día en que nos dimos nuestro primer beso...bueno,
+                    no nos dimos, sino que yo te lo robé xd fue el día de tu retiro, recuerdo al regreso yo estaba
+                    esperandote arriba, llegaste y nos quedamos hablando, en eso...recuerdo como me quedé fijamente
+                    viendote lo hermosa que eres mientras hablabas...y sin pensarlo mucho sin ni siquiera pensar si
+                    había algun maestro, me acerqué y te robé tu primer beso...fue el inicio de algo muy hermoso, uno de
+                    nuestros principales lenguajes del amor pienso yo, las muestras de cariño físicas, que por cierto,
+                    revisando los chats de esos días, tu no te ibas a dejar besar porque para ti tenía "novia" en ese
+                    momento...pero la verdad yo dejo a cualquier mujer por ti...por cierto x2 ese mismo día fue la
+                    primera vez que te preste mi sueter y lo ensuciaste :) no se ni como o de que pero me lo dijiste por
+                    chat xd me preguntaste que si lo podías lavar por eso, pero que no querías porque te gustaba como
+                    tenía impregnado mi olor...</p>
+            </div>
+
+            <!--Primer ramo-->
+            <div class="col-12">
+                <hr>
+                <div class="circle"> </div>
+                <hr>
+            </div>
+            <div class="col-12 p-0">
+                <h2>Primer ramo</h2>
+                <h3>14 Jun. 2018</h3>
+                <img src="../resources/5.jpg" alt="" width="100%">
+                <p>Esto es de cuando te di tu primer ramo de rosas, para nuestro 3° mes juntos, recuerdo que estabas tan
+                    feliz presumiendo tu ramo por todo el rical, estabas tan feliz que hasta lo publicaste en tu
+                    Instagram (creo que borraste la publicación) lo subiste de estado de whatsapp (de alli la foto) y
+                    hasta la pusiste como tu foto de perfil en whatsapp.</p>
+            </div>
+
+            <!--Tus 15 años-->
+            <div class="col-12">
+                <hr>
+                <div class="circle"> </div>
+                <hr>
+            </div>
+            <div class="col-12 p-0">
+                <h2>Tus 15 años</h2>
+                <h3>18 Ago. 2018</h3>
+                <img src="../resources/9.jpg" alt="" width="100%">
+                <p>Recuerdo tanto ese día, como desde que te conocí me mostrabas que practicabas el bals con
+                    Segio...siempre me dio celos que el haya sido tu chambelan, pero creo a como está actualmente la
+                    situación agradeces que no haya sido así...igual apesar de todo, como ya te he dicho siempre me
+                    gusta recordar con cariño todos los momentos lindos que vivimos :c y ese día fue un día muy especial
+                    para ambos, recuerdo como desde que te vi en la Iglesia te veías tan linda...aunque super mayor por
+                    el maquillaje xd pero igual te veías muy linda, recuerdo como después de la misa nos fuimos a los
+                    jardines a la par a tomarnos fotos, y es cuando nos tomamos esta foto...luego recuerdo el como te
+                    fuiste en la limusina con Sergio a la sala de té y verte llegar para que tus damas de honor te tiren
+                    flores, y luego bailaron el bals...no recuerdo muy bien si hasta ese día fue que conocí a tu mami, y
+                    a la mayoría de tu familia, me gustó mucho la noche porque mis padres me dejaron bailar todo lo que
+                    quise contigo hasta ya algo tarde, creo nos fuimos a las 11...y justo recuerdo que me contaste que
+                    cuando me fui pusieron kpop xd la cena por cierto estaba muy rica, recuerdo que el arroz estaba
+                    buenísimo porque tenía pedacitos de queso derretido, en fin un día inolvidable.</p>
+            </div>
+
+            <!--Mi cumpleaños #14-->
+            <div class="col-12">
+                <hr>
+                <div class="circle"> </div>
+                <hr>
+            </div>
+            <div class="col-12 p-0">
+                <h2>Mi cumpleaños #14</h2>
+                <h3>15 Sep. 2018</h3>
+                <img src="../resources/12.jpg" alt="" width="100%">
+                <p>Este día fue cuando con nuestros amigos de 8° me celebraron mis 14 años en metro, fuimos primero a la
+                    pizza hut, donde recuerdo china y marian hicieron un desastre con la pimienta xdd ya luego fuimos a
+                    los juegos, y es donde nos tomamos una de mis fotos favoritas de todos los tiempos, alli nos
+                    subimos al tagadá xdd varias veces y yo sacrifiqué mi pobre bracito para evitar que salieras
+                    volando xD en fin, creo el mejor cumpleaños que he tenido.</p>
+            </div>
+
+            <!--Primera vez en tu casa-->
+            <div class="col-12">
+                <hr>
+                <div class="circle"> </div>
+                <hr>
+            </div>
+            <div class="col-12 p-0">
+                <h2>Primera vez...y en tu casa también</h2>
+                <h3>30 Oct. 2018</h3>
+                <p>Según revisé...al parecer ya teniamos todo muy preparado para ese día jeje...lo pasamos hablando por
+                    días...y recuerdo esa primera vez tu me fuiste a traer al rical...nos fuimos en bus, pasamos
+                    comprando condones ME HICISTE COMPRAR CONDONES mejor dicho :) que todavía recuerdo esa estafa, se
+                    supone eran sabor a frutas y pura vrga :v (que raro se ve el pacman en esta tipografía xD) pero
+                    bueno...de alli nos fuimos a tu casa..y tuvimos sexo anal por primera vez, se sintió tan bien dios
+                    mio...🤤...recuerdo que te hice llorar ese día y me sentí mal por eso...igual tu quisiste
+                    seguir :) ya no doy más detalles...pasamos todo el día en tu casa y la verdad fue uno de los mejores
+                    días de mi vida, hicimos un pacto con nuestros cuerpos, como uno solo, y fue tan lindo el
+                    sentir como si ya estuvieramos casados y vivieramos juntos...me cocinaste
+                    el almuerzo...vimos peliculas..era perfecto, daría lo que sea por volver a esos días...</p>
+            </div>
+
+            <!--Cumpleaños de mi hermano-->
+            <div class="col-12">
+                <hr>
+                <div class="circle"> </div>
+                <hr>
+            </div>
+            <div class="col-12 p-0">
+                <h2>Cumpleaños de mi hermano</h2>
+                <h3>3 Nov. 2018</h3>
+                <p>Este día fue de cuando te invitamos junto con tu hermana y Milo al cumpleaños de mi hermano en el
+                    complejo de ANDA...la verdad no tengo muchos recuerdos de este día porque creo solo fue la tarde y
+                    por mi familia pues no pude pasar mucho tiempo junto a ti...igual me hubiera gustado que hubieras
+                    ido más veces y no solo esa...</p>
+            </div>
+
+            <!--Regalo de cubo-->
+            <div class="col-12">
+                <hr>
+                <div class="circle"> </div>
+                <hr>
+            </div>
+            <div class="col-12 p-0">
+                <h2>Regalo de cubo</h2>
+                <h3>12 Dic. 2018</h3>
+                <p>Para nuestro aniversario de 9° mes juntos me regalaste una almohada/peluche de un cubic rubik junto
+                    con un lubricante para cubos, la verdad, de los mejores regalos que me han dado, el cubo de almohada
+                    aún lo tengo en mi cama, duermo con el cada noche :c y el lubricante aún tengo, no se me ha acabado.
+                </p>
+            </div>
+
+            <!--Regalo 14 de feb.-->
+            <div class="col-12">
+                <hr>
+                <div class="circle"> </div>
+                <hr>
+            </div>
+            <div class="col-12 p-0">
+                <h2>Regalo de San Valentin y Aniversario</h2>
+                <h3>14 Feb. 2019</h3>
+                <img src="../resources/16.jpg" alt="" width="100%">
+                <p>Fue nuestro primer san valentin juntos y el día en que te regalé a Junior, ya ni se que es de él
+                    actualmente pero bueno, también fue el día que me diste ese globo aeroestático, que aúnconservo su
+                    canasta y los corazones que traía en mi cuarto</p>
+            </div>
+
+            <!--Primera cita-->
+            <div class="col-12">
+                <hr>
+                <div class="circle"> </div>
+                <hr>
+            </div>
+            <div class="col-12 p-0">
+                <h2>Primera cita</h2>
+                <h3>12 Mar. 2019</h3>
+                <img src="../resources/22.jpg" alt="" width="100%">
+                <p>Creería la primera vez que salimos juntos así a algun lado solos, aunque creo esa vez nos escapamos
+                    con la Meli también pero aja xd primer año juntos...recuerdo que me dio pena tomarme la foto pero no
+                    se porque...</p>
+            </div>
+
+            <!--Cumpleaños china-->
+            <div class="col-12">
+                <hr>
+                <div class="circle"> </div>
+                <hr>
+            </div>
+            <div class="col-12 p-0">
+                <h2>15 años de China</h2>
+                <h3>2 Ago. 2019</h3>
+                <img src="../resources/19.jpg" alt="" width="100%">
+                <p>Esto fue en la fiesta de 15 de la china, que la verdad no tengo muchos recuerdos de la misma, si
+                    recuerdo en la sala de te tu fuiste de las primeras en llegar, estabamos en una mesa en la esquina,
+                    y disfrute mucho esa noche junto a ti, bailar contigo, y que en algun momento nos salimos del salón
+                    y nos tomaron esa foto que tanto amo...</p>
+            </div>
+
+            <!--Primera vez-->
+            <div class="col-12">
+                <hr>
+                <div class="circle"> </div>
+                <hr>
+            </div>
+            <div class="col-12 p-0">
+                <h2>Nuestra primera vez</h2>
+                <h3>1 Oct. 2019</h3>
+                <p>La verdad que de esto si me recuerdo muy bien...no era primera vez que venias en mi casa, lo
+                    planeamos por días, me recuerdo hasta lo habiamos hablado con la meli, pero por no comunicarnos bien
+                    de si irte a traer o no, casi te dejo perdida en la parada de buses :D y me tocó irte a traer, luego
+                    de eso pues...ya sabes lo que pasó en mi casa...no debo dar detalles de</p>
+            </div>
+
+            <!--Estrenar A10s-->
+            <div class="col-12">
+                <hr>
+                <div class="circle"> </div>
+                <hr>
+            </div>
+            <div class="col-12 p-0">
+                <h2>Estrenar mi telefono A10s</h2>
+                <h3>1 Oct. 2019</h3>
+                <img src="../resources/25.jpg" alt="" width="100%">
+                <p>No recuerdo...que llegamos a hacer al rical, o porque estaba tu mami, porque recuerdo que también le
+                    tome fotos a tu mami, pero fue el día que practicamente estrené la camara de mi nuevo telefono en
+                    ese entones, estaba emocionado porque tenía ese efecto "bokeh" que a mi me gustaba tanto, y la
+                    verdad de ese día salieron muchas fotos que nos encantaron, pero mi fav, esta</p>
+            </div>
+
+            <!--Reencuentro a escondidas-->
+            <div class="col-12">
+                <hr>
+                <div class="circle"> </div>
+                <hr>
+            </div>
+            <div class="col-12 p-0">
+                <h2>Reencuentro a escondidas</h2>
+                <h3>2021</h3>
+                <img src="../resources/34.jpg" alt="" width="100%">
+                <p>Después de todo esto, pues vino la pandemia...y ya no pasaron muchas cosas en esos días, pero
+                    recuerdo que organizamos con china una reunión a escondidas en su casa para que así pueda verte :'3
+                    te extrañaba mucho...no sabes cuanta falta me hacias...</p>
+            </div>
+
+            <!--Reencuentro oficial-->
+            <div class="col-12">
+                <hr>
+                <div class="circle"> </div>
+                <hr>
+            </div>
+            <div class="col-12 p-0">
+                <h2>Reencuentro oficial</h2>
+                <h3>2021</h3>
+                <img src="../resources/35.jpg" alt="" width="100%">
+                <p>Y esto ya fue nuestro primer reencuentro oficial en pandemia, recuerdo que puse de excusa para verte
+                    nuestros hijos...y yo aún ilusionado de formar una familia junto a tí, más no sabía que en unos
+                    meses después me terminarias...añoro mucho esta foto porque es la última que tenemos juntos...💔</p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="my-5 px-4">
+        <img src="../resources/cute-cat.gif" alt="">
+        <p class="text-center mt-4">Desarrollado con mucho amor por: <br> Josué Argumedo - 14/03/23</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <script src="../js/main.js"></script>
+</body>
+
+</html>

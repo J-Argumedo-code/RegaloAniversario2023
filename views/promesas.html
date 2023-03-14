@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Recuerdos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/components.css">
+</head>
+
+<body>
+    <div class="pre-load position-fixed w-100 h-100 d-flex justify-content-center align-items-center" id="preLoad">
+        <svg xmlns="http://www.w3.org/2000/svg" width="40" viewBox="0 0 16 16" class="m-4">
+            <path
+                d="M4 1c2.21 0 4 1.755 4 3.92C8 2.755 9.79 1 12 1s4 1.755 4 3.92c0 3.263-3.234 4.414-7.608 9.608a.513.513 0 0 1-.784 0C3.234 9.334 0 8.183 0 4.92 0 2.755 1.79 1 4 1z" />
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="40" viewBox="0 0 16 16" class="m-4">
+            <path
+                d="M4 1c2.21 0 4 1.755 4 3.92C8 2.755 9.79 1 12 1s4 1.755 4 3.92c0 3.263-3.234 4.414-7.608 9.608a.513.513 0 0 1-.784 0C3.234 9.334 0 8.183 0 4.92 0 2.755 1.79 1 4 1z" />
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="40" viewBox="0 0 16 16" class="m-4">
+            <path
+                d="M4 1c2.21 0 4 1.755 4 3.92C8 2.755 9.79 1 12 1s4 1.755 4 3.92c0 3.263-3.234 4.414-7.608 9.608a.513.513 0 0 1-.784 0C3.234 9.334 0 8.183 0 4.92 0 2.755 1.79 1 4 1z" />
+        </svg>
+    </div>
+
+    <!--Sidebar-->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="sidebar">
+        <div class="offcanvas-header">
+            <h1 class="offcanvas-title">Menú</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="navbar-nav m-auto">
+                <li class="nav-item">
+                    <a class="nav-link sidebar-link" href="../index.html">❣ Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link sidebar-link" href="recuerdos.html">❣ Recuerdos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link sidebar-link" href="galeria.html">❣ Galeria</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link sidebar-link" href="canciones.html">❣ Canciones</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active sidebar-link" href="promesas.html">❣ Promesas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link sidebar-link" href="porque.html">❣ ¿Por qué?</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid flex-nowrap">
+            <a class="navbar-brand text-center m-0 w-100" href="../index.html">
+                <img src="../resources/logo.svg" alt="" height="100px" class="mx-auto">
+            </a>
+            <button class="navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#sidebar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav m-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Recuerdos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Galeria</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Canciones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Promesas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">¿Por qué?</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main class="container-fluid">
+        <div class="row position-relative">
+            <img src="../resources/promesas.jpg" alt="" class="p-0">
+            <div class="col-12 position-absolute z-3 mt-5 pt-4">
+                <h1>Mis promesas</h1>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 p-4">
+                <p>Se que he prometido muchas cosas, pero una de las más importantes es "Te amaré por siempre" la cual
+                    pienso cumplirla. En esta sección se encuentra, no se si la última o de las últimas
+                    cartas que te escribiré, la carta...es una carta más expresando lo que verdaderamente siento, aunque
+                    la veo más como una carta de compromiso...de una última promesa, pero tú me diras cuando la leas.
+                </p>
+                <a href="../resources/carta.pdf">
+                    <p class="text-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" class="me-3" viewBox="0 0 16 16">
+                            <path
+                                d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z" />
+                            <path
+                                d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z" />
+                        </svg>
+                        Descargar carta
+                    </p>
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="my-5 px-4">
+        <img src="../resources/cute-cat.gif" alt="">
+        <p class="text-center mt-4">Desarrollado con mucho amor por: <br> Josué Argumedo - 14/03/23</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <script src="../js/main.js"></script>
+</body>
+
+</html>

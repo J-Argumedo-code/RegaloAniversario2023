@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&family=Cookie&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Cookie', cursive;
+    text-align: center;
+    color: #311204;
+}
+:root{
+    --color-main: #E9DFD5;
+    --color-dark: #D0B4A9;
+}
+::-webkit-scrollbar {
+    width: 10px;
+    background: var(--color-main);
+}
+::-webkit-scrollbar-thumb {
+    background: var(--color-dark);
+    border-radius: 4px;
+}
+
+.pre-load{
+    background: var(--color-main);
+    z-index: 99999;
+    transition: 2s;
+}
+.pre-load svg{
+    fill:rgb(194, 0, 74);
+}
+.pre-load svg:nth-child(1){
+    animation: pre-load 1.5s linear infinite;
+}
+.pre-load svg:nth-child(2){
+    animation: pre-load 1.5s linear infinite 0.2s;
+}
+.pre-load :nth-child(3){
+    animation: pre-load 1.5s linear infinite 0.4s;
+}
+@keyframes pre-load{
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-25px);
+        fill: rgb(216, 0, 90);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+body{
+    background-color: var(--color-main);
+}
+
+h1, h2{
+    font-family: 'Comic Neue', cursive;
+    font-weight: bold;
+}
+h1{
+    font-size: 35px;
+}
+h2{
+    font-size: 30px;
+}
+p{
+    font-size: 25px;
+    text-align: justify;
+}
+
+.navbar{
+    font-size: 32px;
+    background-color: var(--color-main);
+}
+.nav-item{
+    margin: 0 30px;
+}
+.sidebar-link{
+    text-align: justify;
+    font-size: 30px;
+}

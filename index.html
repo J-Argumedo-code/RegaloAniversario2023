@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>5° Aniversario</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="pre-load position-fixed w-100 h-100 d-flex justify-content-center align-items-center" id="preLoad">
+        <svg xmlns="http://www.w3.org/2000/svg" width="40" viewBox="0 0 16 16" class="m-4">
+            <path
+                d="M4 1c2.21 0 4 1.755 4 3.92C8 2.755 9.79 1 12 1s4 1.755 4 3.92c0 3.263-3.234 4.414-7.608 9.608a.513.513 0 0 1-.784 0C3.234 9.334 0 8.183 0 4.92 0 2.755 1.79 1 4 1z" />
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="40" viewBox="0 0 16 16" class="m-4">
+            <path
+                d="M4 1c2.21 0 4 1.755 4 3.92C8 2.755 9.79 1 12 1s4 1.755 4 3.92c0 3.263-3.234 4.414-7.608 9.608a.513.513 0 0 1-.784 0C3.234 9.334 0 8.183 0 4.92 0 2.755 1.79 1 4 1z" />
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="40" viewBox="0 0 16 16" class="m-4">
+            <path
+                d="M4 1c2.21 0 4 1.755 4 3.92C8 2.755 9.79 1 12 1s4 1.755 4 3.92c0 3.263-3.234 4.414-7.608 9.608a.513.513 0 0 1-.784 0C3.234 9.334 0 8.183 0 4.92 0 2.755 1.79 1 4 1z" />
+        </svg>
+    </div>
+
+    <!--Sidebar-->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="sidebar">
+        <div class="offcanvas-header">
+            <h1 class="offcanvas-title">Menú</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="navbar-nav m-auto">
+                <li class="nav-item">
+                    <a class="nav-link sidebar-link" href="views/recuerdos.html">❣ Recuerdos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link sidebar-link" href="views/galeria.html">❣ Galeria</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link sidebar-link" href="views/canciones.html">❣ Canciones</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link sidebar-link" href="views/promesas.html">❣ Promesas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link sidebar-link" href="views/porque.html">❣ ¿Por qué?</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid flex-nowrap">
+            <a class="navbar-brand text-center m-0 w-100" href="index.html">
+                <img src="resources/logo.svg" alt="" height="100px" class="mx-auto">
+            </a>
+            <button class="navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#sidebar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav m-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Recuerdos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Galeria</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Canciones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Promesas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">¿Por qué?</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main class="container-fluid">
+        <div class="row home-banner position-relative align-items-center">
+            <div class="carousel slide p-0 carousel-fade" data-bs-ride="carousel" data-bs-touch="false">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="resources/28.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="resources/c2.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="resources/c3.jpg" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 text-white position-absolute z-3">
+                <h1>¡Feliz Aniversario!</h1>
+                <p>Se que ya no estamos juntos pero...igual se cunplen 5 años desde la mejor decición que he tomado en
+                    mi vida.</p>
+            </div>
+        </div>
+
+        <div class="row my-5">
+            <div class="col-12 px-4">
+                <h2>¿Por qué este sitio web?</h2>
+                <p>Si te preguntas el porque de este sitio web, pues primeramente es porque te lo debía, recuerdo cuando
+                    pasó lo de Nelson y me reclamaste porque nunca te hice un sitio web, y si me preguntas el porqué no
+                    te lo hice antes...la verdad no se, ni yo se la respuesta, así que pues, aun después de mucho mucho
+                    tiempo...aquí está, espero te guste, igualmente ya me estoy preparando para que me digas "Ay Argu,
+                    no se que decir", no te preocupes, ya me voy acostumbrando...</p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="my-5 px-4">
+        <img src="resources/cute-cat.gif" alt="">
+        <p class="text-center mt-4">Desarrollado con mucho amor por: <br> Josué Argumedo - 14/03/23</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

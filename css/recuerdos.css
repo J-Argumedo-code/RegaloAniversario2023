@@ -1,0 +1,20 @@
+hr{
+    transform: rotate(90deg);
+    width: 30px !important;
+    margin: auto auto 12px auto !important;
+    padding: 0 !important;
+    border: 2px solid var(--color-dark);
+    opacity: 0.8;
+}
+h2{
+    padding: 0;
+    background-color: var(--color-dark);
+    color: white;
+}
+.circle{
+    width: 20px;
+    height: 20px;
+    background-color: var(--color-dark);
+    margin: auto;
+    border-radius: 100%;
+}
