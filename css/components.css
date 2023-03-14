@@ -23,7 +23,6 @@
 .pre-load{
     background: var(--color-main);
     z-index: 99999;
-    transition: 2s;
 }
 .pre-load svg{
     fill:rgb(194, 0, 74);
