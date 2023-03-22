@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Canciones</title>
+    <title>Flores amarillas</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/components.css">
@@ -92,45 +92,35 @@
     <main class="container-fluid">
 
         <div class="row position-relative">
-            <img src="../resources/canciones.jpg" alt="" class="p-0">
+            <img src="../resources/flores.jpg" alt="" class="p-0">
             <div class="col-12 position-absolute z-3 mt-5 pt-4">
-                <h1>Nuestras canciones</h1>
+                <h1>Flores amarillas</h1>
             </div>
         </div>
 
-        <audio id="player" ontimeupdate="updateProgress();">
-            <source id="source">
+        <audio id="player">
+            <source src="../resources/music/Flores Amarillas.mp3" type="audio/mp3">
             Audio no soportado
         </audio>
-
-        <div class="row mb-4 pt-4">
-            <div class="col-12 btn-canciones">
-                <h2>Elije una playlist</h2>
-                <button onclick="c1();">Primeras canciones que te dediqué</button>
-                <button onclick="c2();">Primeras canciones que me dedicaste</button>
-                <button onclick="c3();">Nuevas canciones que te dedico</button>
+        <div class="row">
+            <img src="../resources/shrek.png" alt="" class="p-0">
+            <div class="col-12">
+                <p>Esto va de una de mis peliculas favoritas, Shrek. Bueno además hoy por ser 21 de marzo pues si fuera
+                    tu novio tendría que haberte dado un ramo de flores amarillas, pero ya que no es el caso, en vez de
+                    eso te dedico este diseño de flores amarillas que hice.</p>
             </div>
-        </div>
-
-        <div class="row controls mb-4 p-4">
-            <div class="col-5" id="timer">00:00/00:00</div>
-            <div class="col-7 d-flex align-items-center">
-                <img src="../resources/volume.svg" width="27px">
-                <input type="range" name="volumen" id="volumen" min="0" max="1" step="0.01" value="0.75">
-            </div>
-
-            <div class="col-12 my-4">
-                <img src="../resources/back.svg" width="27px" onclick="prevMusic();">
-                <img src="../resources/play.svg" class="mx-4" width="27px" onclick="togglePlay();" id="iconPlay">
-                <img src="../resources/next.svg" width="27px" onclick="nextMusic();">
+            <div class="col-12 my-5">
+                <img src="../resources/flowers.svg" alt="" width="100%">
+                <h3>"Vi esta flor y pensé en tí porque es bonita, en realidad a mí no me gusta, pero creí que a tí si te
+                    gustaría, porque tú si eres bonita. 🌻"</h3>
             </div>
             <div class="col-12">
-                <span class="fs-3" id="currentPlay"></span>
-                <progress id="progress" value="0" max="100"></progress>
+                <h2>¿Por qué flores amarillas?</h2>
+                <p>Las flores amarillas si se obsequian a las personas por las que existe un interés
+                    amoroso, estas obtiene un significado de amor o una vida juntos. Y yo mi único deseo es vivir mi
+                    vida junto a ti, y si no sucede, no me equivoqué de amor, me equivoque de vida ❤</p>
+                <h2>Te amo</h2>
             </div>
-
-            <h2>Canciones</h2>
-            <ol id="listadoMusica"></ol>
         </div>
     </main>
 
@@ -143,7 +133,9 @@
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
         crossorigin="anonymous"></script>
     <script src="../js/main.js"></script>
-    <script src="../js/canciones.js"></script>
+    <script>
+        player.play()
+    </script>
 </body>
 
 </html>

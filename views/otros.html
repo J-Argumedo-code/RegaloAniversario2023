@@ -4,11 +4,10 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Canciones</title>
+    <title>Otros</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/components.css">
-    <link rel="stylesheet" href="../css/canciones.css">
 </head>
 
 <body>
@@ -45,7 +44,7 @@
                     <a class="nav-link sidebar-link" href="galeria.html">❣ Galeria</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active sidebar-link" href="canciones.html">❣ Canciones</a>
+                    <a class="nav-link sidebar-link" href="canciones.html">❣ Canciones</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link sidebar-link" href="promesas.html">❣ Promesas</a>
@@ -90,47 +89,18 @@
         </div>
     </nav>
     <main class="container-fluid">
-
         <div class="row position-relative">
-            <img src="../resources/canciones.jpg" alt="" class="p-0">
+            <img src="../resources/porque.jpg" alt="" class="p-0">
             <div class="col-12 position-absolute z-3 mt-5 pt-4">
-                <h1>Nuestras canciones</h1>
+                <h1>Otras opciones</h1>
             </div>
         </div>
-
-        <audio id="player" ontimeupdate="updateProgress();">
-            <source id="source">
-            Audio no soportado
-        </audio>
 
         <div class="row mb-4 pt-4">
             <div class="col-12 btn-canciones">
-                <h2>Elije una playlist</h2>
-                <button onclick="c1();">Primeras canciones que te dediqué</button>
-                <button onclick="c2();">Primeras canciones que me dedicaste</button>
-                <button onclick="c3();">Nuevas canciones que te dedico</button>
+                <h2>Elije una opción</h2>
+                <button class="btn-main" onclick="location.href='flores_amarillas.html'">Flores amarillas 21-03-23</button>
             </div>
-        </div>
-
-        <div class="row controls mb-4 p-4">
-            <div class="col-5" id="timer">00:00/00:00</div>
-            <div class="col-7 d-flex align-items-center">
-                <img src="../resources/volume.svg" width="27px">
-                <input type="range" name="volumen" id="volumen" min="0" max="1" step="0.01" value="0.75">
-            </div>
-
-            <div class="col-12 my-4">
-                <img src="../resources/back.svg" width="27px" onclick="prevMusic();">
-                <img src="../resources/play.svg" class="mx-4" width="27px" onclick="togglePlay();" id="iconPlay">
-                <img src="../resources/next.svg" width="27px" onclick="nextMusic();">
-            </div>
-            <div class="col-12">
-                <span class="fs-3" id="currentPlay"></span>
-                <progress id="progress" value="0" max="100"></progress>
-            </div>
-
-            <h2>Canciones</h2>
-            <ol id="listadoMusica"></ol>
         </div>
     </main>
 
@@ -143,7 +113,6 @@
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
         crossorigin="anonymous"></script>
     <script src="../js/main.js"></script>
-    <script src="../js/canciones.js"></script>
 </body>
 
 </html>
